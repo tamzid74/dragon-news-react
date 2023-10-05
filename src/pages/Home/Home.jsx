@@ -20,7 +20,7 @@ const Home = () => {
         </div>
         <div className="col-span-2">
           <h1 className="text-4xl">Dragon News Home</h1>
-          {news.slice(0,3).map((aNews) => (
+          {news.map((aNews) => (
             <NewsPortal key={aNews._id} news={aNews}></NewsPortal>
           ))}
         </div>
